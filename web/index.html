@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="">
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Form</h1>
+      <div class="innercontainer">
+        <form action="Registerservlet" method="post">
+          <table>
+            <tr>
+              <td>Enter Your Name:</td>
+              <td>
+                <input type="text" name="user_name" placeholder="Enter name" />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter Your Password:</td>
+              <td>
+                <input
+                  type="text"
+                  name="user_password"
+                  placeholder="Enter Password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter Your Email:</td>
+              <td>
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Enter Email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Select Gender</td>
+              <td>
+                <input type="radio" name="user_gender" value="male" />male
+                &nbsp; &nbsp;
+                <input type="radio" name="user_gender" value="female" />female
+              </td>
+            </tr>
+            <tr>
+              <td>Select your course</td>
+              <td>
+                <select name="user_course">
+                  <option value="java">java</option>
+                  <option value="php">php</option>
+                  <option value="python">python</option>
+                  <option value="Adroid">Adroid</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" value="checked" name="condition" />
+              </td>
+              <td>Agree terms and condition</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
